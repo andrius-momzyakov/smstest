@@ -6,7 +6,7 @@
 
 1. Скопировать папку libsms в папку проекта
 2. В settings.py проекта или в dgango.conf.global_settings.py прописать 
-{{{
+
 SMS_TRANSPORTS = {
 		'default': {
 			'BACKEND' : 'libsms.backends.sms.SmsTransport',
@@ -28,6 +28,11 @@ SMS_TRANSPORTS = {
 			}
 		}
 	}
-}}}
+
+## Тест
+
+Скопировать прпку проекта, войти в нее и выполнить 
+
+python manage.py test
 
 
